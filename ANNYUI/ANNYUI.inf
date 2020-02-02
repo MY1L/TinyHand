@@ -1,0 +1,41 @@
+;github.com/MY1L/TinyHand
+
+[Version]
+signature="$CHICAGO$"
+
+[DefaultInstall]
+CopyFiles = Scheme.Cur
+AddReg    = Scheme.Reg
+
+[DestinationDirs]
+Scheme.Cur = 10,"%CUR_DIR%"
+
+[Scheme.Cur]
+Abusy.ani
+Ahand.cur
+Ahelpsel.cur
+Alink.cur
+Aunavail.cur
+Aworking.ani
+
+[Strings]
+CUR_DIR     = "Cursors\TinyHand"
+SCHEME_NAME = "TinyHand ANNYUI"
+alternate   = "up.cur"
+busy    = "Abusy.ani"
+cross   = "cross.cur"
+dgn1    = "dotNWSE.cur"
+dgn2    = "dotNESW.cur"
+hand    = "pen.ani"
+help    = "Ahelpsel.cur"
+horz    = "dotEW.cur"
+link    = "Alink.cur"
+move    = "dotmove.cur"
+pointer = "Ahand.cur"
+text    = "beam.ani"
+unavailiable = "Aunavail.cur"
+vert    = "dotNS.cur"
+work    = "Aworking.ani"
+
+[Scheme.Reg]
+HKCU,"Control Panel\Cursors\Schemes","%SCHEME_NAME%",,"%10%\%CUR_DIR%\%pointer%,%10%\%CUR_DIR%\%help%,%10%\%CUR_DIR%\%work%,%10%\%CUR_DIR%\%busy%,%10%\%CUR_DIR%\%Cross%,%10%\%CUR_DIR%\%Text%,%10%\%CUR_DIR%\%Hand%,%10%\%CUR_DIR%\%Unavailiable%,%10%\%CUR_DIR%\%Vert%,%10%\%CUR_DIR%\%Horz%,%10%\%CUR_DIR%\%Dgn1%,%10%\%CUR_DIR%\%Dgn2%,%10%\%CUR_DIR%\%move%,%10%\%CUR_DIR%\%alternate%,%10%\%CUR_DIR%\%link%"
