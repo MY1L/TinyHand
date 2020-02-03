@@ -11,40 +11,35 @@ AddReg = Scheme.Reg
 Scheme.Cur = 10,"%CUR_DIR%"
 
 [Scheme.Cur]
-beam.ani
-busy.ani
-cross.cur
-dotEW.cur
-dotmove.cur
-dotNESW.cur
-dotNS.cur
-dotNWSE.cur
-hand.cur
-helpsel.cur
-link.cur
-pen.ani
-unavail.cur
-up.cur
-working.ani
+Zbusy.ani
+ZdotEW.cur
+Zdotmove.cur
+ZdotNESW.cur
+ZdotNS.cur
+ZdotNWSE.cur
+Zhand.cur
+Zhelpsel.cur
+Zlink.cur
+Zworking.ani
 
 [Strings]
 CUR_DIR = "Cursors\TinyHand"
-SCHEME_NAME = "TinyHand KOFJI."
+SCHEME_NAME = "TinyHand ZRKL"
 alternate = "up.cur"
-busy = "busy.ani"
+busy = "Zbusy.ani"
 cross = "cross.cur"
-dgn1 = "dotNWSE.cur"
-dgn2 = "dotNESW.cur"
+dgn1 = "ZdotNWSE.cur"
+dgn2 = "ZdotNESW.cur"
 hand = "pen.ani"
-help = "helpsel.cur"
-horz = "dotEW.cur"
-link = "link.cur"
-move = "dotmove.cur"
-pointer = "hand.cur"
+help = "Zhelpsel.cur"
+horz = "ZdotEW.cur"
+link = "Zlink.cur"
+move = "Zdotmove.cur"
+pointer = "Zhand.cur"
 text = "beam.ani"
 unavailiable = "unavail.cur"
-vert = "dotNS.cur"
-work = "working.ani"
+vert = "ZdotNS.cur"
+work = "Zworking.ani"
 
 [Scheme.Reg]
 HKCU,"Control Panel\Cursors\Schemes","%SCHEME_NAME%",,"%10%\%CUR_DIR%\%pointer%,%10%\%CUR_DIR%\%help%,%10%\%CUR_DIR%\%work%,%10%\%CUR_DIR%\%busy%,%10%\%CUR_DIR%\%Cross%,%10%\%CUR_DIR%\%Text%,%10%\%CUR_DIR%\%Hand%,%10%\%CUR_DIR%\%Unavailiable%,%10%\%CUR_DIR%\%Vert%,%10%\%CUR_DIR%\%Horz%,%10%\%CUR_DIR%\%Dgn1%,%10%\%CUR_DIR%\%Dgn2%,%10%\%CUR_DIR%\%move%,%10%\%CUR_DIR%\%alternate%,%10%\%CUR_DIR%\%link%"
