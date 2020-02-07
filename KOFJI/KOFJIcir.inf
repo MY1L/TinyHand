@@ -5,46 +5,65 @@ signature="$CHICAGO$"
 
 [DefaultInstall]
 CopyFiles = Scheme.Cur
-AddReg = Scheme.Reg
+AddReg    = Scheme.Reg,Wreg
 
 [DestinationDirs]
 Scheme.Cur = 10,"%CUR_DIR%"
 
-[Scheme.Cur]
-beam.ani
-busy.ani
-cross.cur
-cirEW.cur
-cirmove.cur
-cirNESW.cur
-cirNS.cur
-cirNWSE.cur
-hand.cur
-helpsel.cur
-link.cur
-pen.ani
-unavail.cur
-up.cur
-working.ani
-
-[Strings]
-CUR_DIR = "Cursors\TinyHand"
-SCHEME_NAME = "TinyHand KOFJIo"
-alternate = "up.cur"
-busy = "busy.ani"
-cross = "cross.cur"
-dgn1 = "cirNWSE.cur"
-dgn2 = "cirNESW.cur"
-hand = "pen.ani"
-help = "helpsel.cur"
-horz = "cirEW.cur"
-link = "link.cur"
-move = "cirmove.cur"
-pointer = "hand.cur"
-text = "beam.ani"
-unavailiable = "unavail.cur"
-vert = "cirNS.cur"
-work = "working.ani"
-
 [Scheme.Reg]
 HKCU,"Control Panel\Cursors\Schemes","%SCHEME_NAME%",,"%10%\%CUR_DIR%\%pointer%,%10%\%CUR_DIR%\%help%,%10%\%CUR_DIR%\%work%,%10%\%CUR_DIR%\%busy%,%10%\%CUR_DIR%\%Cross%,%10%\%CUR_DIR%\%Text%,%10%\%CUR_DIR%\%Hand%,%10%\%CUR_DIR%\%Unavailiable%,%10%\%CUR_DIR%\%Vert%,%10%\%CUR_DIR%\%Horz%,%10%\%CUR_DIR%\%Dgn1%,%10%\%CUR_DIR%\%Dgn2%,%10%\%CUR_DIR%\%move%,%10%\%CUR_DIR%\%alternate%,%10%\%CUR_DIR%\%link%"
+
+[Wreg]
+HKCU,"Control Panel\Cursors",,0x00020000,"%SCHEME_NAME%"
+HKCU,"Control Panel\Cursors",AppStarting,0x00020000,"%10%\%CUR_DIR%\%work%"
+HKCU,"Control Panel\Cursors",Arrow,0x00020000,"%10%\%CUR_DIR%\%pointer%"
+HKCU,"Control Panel\Cursors",Crosshair,0x00020000,"%10%\%CUR_DIR%\%Cross%"
+HKCU,"Control Panel\Cursors",Hand,0x00020000,"%10%\%CUR_DIR%\%link%"
+HKCU,"Control Panel\Cursors",Help,0x00020000,"%10%\%CUR_DIR%\%Help%"
+HKCU,"Control Panel\Cursors",IBeam,0x00020000,"%10%\%CUR_DIR%\%Text%"
+HKCU,"Control Panel\Cursors",No,0x00020000,"%10%\%CUR_DIR%\%Unavailiable%"
+HKCU,"Control Panel\Cursors",NWPen,0x00020000,"%10%\%CUR_DIR%\%Hand%"
+HKCU,"Control Panel\Cursors",SizeAll,0x00020000,"%10%\%CUR_DIR%\%move%"
+HKCU,"Control Panel\Cursors",SizeNESW,0x00020000,"%10%\%CUR_DIR%\%Dgn2%"
+HKCU,"Control Panel\Cursors",SizeNS,0x00020000,"%10%\%CUR_DIR%\%Vert%"
+HKCU,"Control Panel\Cursors",SizeNWSE,0x00020000,"%10%\%CUR_DIR%\%Dgn1%"
+HKCU,"Control Panel\Cursors",SizeWE,0x00020000,"%10%\%CUR_DIR%\%Horz%"
+HKCU,"Control Panel\Cursors",UpArrow,0x00020000,"%10%\%CUR_DIR%\%alternate%"
+HKCU,"Control Panel\Cursors",Wait,0x00020000,"%10%\%CUR_DIR%\%busy%"
+HKLM,"SOFTWARE\Microsoft\Windows\CurrentVersion\Runonce\Setup\","",,"rundll32.exe shell32.dll,Control_RunDLL main.cpl @0"
+
+[Scheme.Cur]
+"hand.cur"
+"helpsel.cur"
+"working.ani"
+"busy.ani"
+"cross.cur"
+"beam.ani"
+"pen.ani"
+"unavail.cur"
+"cirNS.cur"
+"cirEW.cur"
+"cirNWSE.cur"
+"cirNESW.cur"
+"cirmove.cur"
+"up.cur"
+"link.cur"
+
+[Strings]
+CUR_DIR         = "Cursors\TinyHand"
+SCHEME_NAME     = "TinyHand KOFJI¡£"
+pointer		= "hand.cur"
+help		= "helpsel.cur"
+work		= "working.ani"
+busy		= "busy.ani"
+cross		= "cross.cur"
+text		= "beam.ani"
+hand		= "pen.ani"
+unavailiable	= "unavail.cur"
+vert		= "cirNS.cur"
+horz		= "cirEW.cur"
+dgn1		= "cirNWSE.cur"
+dgn2		= "cirNESW.cur"
+move		= "cirmove.cur"
+alternate	= "up.cur"
+link		= "link.cur"
