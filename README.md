@@ -2,7 +2,7 @@
 
 这是对2018年12月9日发布的“[thinkingcursor](https://github.com/MY1L/thinkingcursor)”光标的更新，但改成更好记的名称：**TinyHand**
 
-主要是让动画更流畅及修正像素级的错误。
+主要是让动画更流畅（指帧数）及修正某些像素级的错误。
 
 如先前所说扩大为系列，如今更支持**黑暗模式**和中指，政确力UpUp!
 
@@ -11,9 +11,11 @@
 
 一共3大系列（肤色）：ZRKL、KOFJI、ANNYUI（名称越长颜色越暗）和各种小分支。
 
-给ZRKL做的手势比较多。
+![ZRKL](/_img/ZRKL.png)
 
-## 下载
+给ZRKL做的手势比较多。注意“sweat.ani”是代替“helpsel.cur”的，动态光标可能不宜用作默认。
+
+## 下载 ![GitHub repo size](https://img.shields.io/github/repo-size/MY1L/TinyHand) ![GitHub All Releases](https://img.shields.io/github/downloads/MY1L/TinyHand/total)
 全部打包：[Releases · MY1L/TinyHand](https://github.com/MY1L/TinyHand/releases)
 
 ## 安装
@@ -29,6 +31,8 @@
 控制面板→鼠标→指针，删除方案，再删除对应光标。如果是用`.inf`安装的，还要进系统光标文件夹删`TinyHand`文件夹。
 
 ## 注意
-资源管理器可能会错误显示cur的预览，例如发现TinyHand光标出现在TinyHand文件夹之外，请删除前用控制面板的指针预览确认下。
+资源管理器可能会错误显示cur的预览，例如发现TinyHand光标出现在TinyHand文件夹之外（这应该不可能），请删除前用控制面板的指针预览确认下。
 
 控制面板的指针预览不会按正常速度显示动态光标。
+
+有什么问题建议就来[Issues ](https://github.com/MY1L/TinyHand/issues)发帖。
